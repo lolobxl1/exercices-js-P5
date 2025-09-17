@@ -1,3 +1,7 @@
 //Votre code ici
 
- export default add;
+export default add;
+
+function add(a, b) {
+  return Number(a) + Number(b);
+}
