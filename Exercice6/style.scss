@@ -1,0 +1,10 @@
+// style.scss
+$blue: #0000ff;
+
+ul {
+  li {
+    color: $blue; // 1) texte bleu
+    padding-left: 10px; // 2) espacement intérieur à gauche
+    margin-bottom: 15px; // 3) marge inférieure
+  }
+}

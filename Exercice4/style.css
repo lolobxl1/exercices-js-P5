@@ -1,0 +1,63 @@
+/* Remise à zéro légère */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* 1) Couleurs d'arrière-plan */
+header {
+  background-color: #ffcc99;
+}
+main {
+  background-color: #e6f2ff;
+}
+aside {
+  background-color: #b3d9ff;
+}
+footer {
+  background-color: #99cc99;
+}
+
+/* 2) Titre en gras et centré dans l'en-tête */
+header h1 {
+  text-align: center;
+  font-weight: bold;
+  margin: 0;
+  padding: 16px 0;
+}
+
+/* 3) Marge de 20px autour de la section principale */
+main > section {
+  margin: 20px;
+}
+
+/* 4) Disposition Flexbox : aside à gauche (flex:1) et section à droite (flex:3) */
+main {
+  display: flex;
+}
+main > aside {
+  flex: 1;
+  padding: 12px;
+}
+main > section {
+  flex: 3;
+  padding: 12px;
+}
+
+/* 5) Bordure 1px grise autour de la barre latérale et du pied de page */
+aside,
+footer {
+  border: 1px solid #ccc;
+}
+
+/* 6) Ombre portée sur l'en-tête et le pied de page */
+header,
+footer {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* (optionnel) Un peu d'espace autour du contenu principal */
+main > aside p,
+main > section p {
+  margin: 0;
+}
